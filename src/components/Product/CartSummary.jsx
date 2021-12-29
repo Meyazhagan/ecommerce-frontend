@@ -1,5 +1,6 @@
 import React from "react";
 import { BiMinus } from "react-icons/bi";
+import { BsInfoCircleFill } from "react-icons/bs";
 import { checkout } from "../../apis/Checkout";
 import classNames from "classnames";
 import { formatter } from "../../helper/formatter";
@@ -71,6 +72,18 @@ function CartSummary({ cart }) {
                         className="w-full rounded-md py-2 bg-black text-white">
                         Procced to Checkout
                     </button>
+                </div>
+                <div className="col-span-full mt-4 mx-4 text-green-800 text-sm">
+                    <div className="flex gap-4 items-center">
+                        <BsInfoCircleFill className="flex-shrink-0" />
+                        <span>To Test Successfull Payment</span>
+                    </div>
+                    <div className="mt-2">Use Card No - 4242 4242 4242 4242</div>
+                    <div className="mt-2">
+                        {`Use Expiry MM / YY - ${new Date().getMonth() + 1} / ${
+                            new Date().getFullYear() % 100
+                        } or Greater`}
+                    </div>
                 </div>
             </div>
         </div>
