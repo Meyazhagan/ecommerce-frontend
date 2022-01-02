@@ -61,7 +61,7 @@ function DetailedProduct({ product, action, isValid }) {
                             </button>
                         </div>
                     </div>
-                    <div className="text text-gray-700 text-center self-center max-w-[45ch] sm:mx-auto">
+                    <div className="text text-gray-700 text-justify self-center max-w-[45ch] sm:mx-auto">
                         {product?.description}
                     </div>
                 </div>
